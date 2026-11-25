@@ -8,7 +8,7 @@
   --night-3: #1c1e30;
   --ink: #e8ecf2;
   --ink-dim: rgba(232, 236, 242, 0.72);
-  --muted: #9a9cab;
+  --muted: #a8aab8;
   --line: rgba(232, 236, 242, 0.12);
   --line-strong: rgba(232, 236, 242, 0.22);
   --aqua: #80ddee;
@@ -292,12 +292,13 @@ dd {
 .link {
   display: inline-flex;
   align-items: center;
+  min-height: 44px;
   gap: 8px;
   color: var(--aqua);
   font-weight: 600;
   background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
   transition: background-size 0.35s var(--ease);
-  padding-bottom: 2px;
+  background-position: 0 calc(100% - 10px);
 }
 .link svg {
   width: 16px;
@@ -1606,4 +1607,9 @@ html.menu-open {
 .profile__head {
   display: grid;
   gap: 10px;
+}
+.form__status a {
+  color: var(--aqua);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }

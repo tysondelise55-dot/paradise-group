@@ -150,7 +150,7 @@ export function ContactForm() {
             <>
               {' '}
               You can also message us on{' '}
-              <a className="link" href={site.socials[0].href} target="_blank" rel="noopener noreferrer">
+              <a href={site.socials[0].href} target="_blank" rel="noopener noreferrer">
                 Instagram
               </a>
               .
